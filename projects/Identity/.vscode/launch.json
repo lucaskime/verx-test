@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Identity.WebApi (Scalar)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Identity.WebApi/bin/Debug/net10.0/Identity.WebApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Identity.WebApi",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "https://localhost:7135;http://localhost:5191"
+            }
+        }
+    ]
+}

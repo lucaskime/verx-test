@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+**/keys/
+.env
+.git
+.vs
+.vscode
+.idea
+.DS_Store
+docker-compose*.yml
+run/
+tests/
+*.md

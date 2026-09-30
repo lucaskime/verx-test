@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Identity",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-identity",
+      "program": "${workspaceFolder}/projects/Identity/Identity.WebApi/bin/Debug/net10.0/Identity.WebApi.dll",
+      "cwd": "${workspaceFolder}/projects/Identity/Identity.WebApi",
+      "env": { "ASPNETCORE_ENVIRONMENT": "Development", "ASPNETCORE_URLS": "http://localhost:5191" },
+      "serverReadyAction": { "action": "openExternally", "pattern": "Now listening on: (https?://\\S+)" }
+    },
+    {
+      "name": "Transaction",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-transaction",
+      "program": "${workspaceFolder}/projects/Transaction/Transaction.WebApi/bin/Debug/net10.0/Transaction.WebApi.dll",
+      "cwd": "${workspaceFolder}/projects/Transaction/Transaction.WebApi",
+      "env": { "ASPNETCORE_ENVIRONMENT": "Development", "ASPNETCORE_URLS": "http://localhost:5107" },
+      "serverReadyAction": { "action": "openExternally", "pattern": "Now listening on: (https?://\\S+)" }
+    },
+    {
+      "name": "BalanceProjection",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-balanceprojection",
+      "program": "${workspaceFolder}/projects/BalanceProjection/BalanceProjection.WebApi/bin/Debug/net10.0/BalanceProjection.WebApi.dll",
+      "cwd": "${workspaceFolder}/projects/BalanceProjection/BalanceProjection.WebApi",
+      "env": { "ASPNETCORE_ENVIRONMENT": "Development", "ASPNETCORE_URLS": "http://localhost:5192" },
+      "serverReadyAction": { "action": "openExternally", "pattern": "Now listening on: (https?://\\S+)" }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Todos (Identity + Transaction + BalanceProjection)",
+      "configurations": ["Identity", "Transaction", "BalanceProjection"],
+      "stopAll": true
+    }
+  ]
+}

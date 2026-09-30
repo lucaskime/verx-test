@@ -1,0 +1,4 @@
+# Dados locais do Identity (chave de assinatura JWT, usuários, credenciais de teste)
+/keys/
+/Data/users.json
+/Data/test-credentials.json

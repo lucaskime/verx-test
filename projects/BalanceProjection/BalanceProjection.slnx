@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BalanceProjection.Domain/BalanceProjection.Domain.csproj" />
+  <Project Path="BalanceProjection.Application/BalanceProjection.Application.csproj" />
+  <Project Path="BalanceProjection.Infrastructure/BalanceProjection.Infrastructure.csproj" />
+  <Project Path="BalanceProjection.IoC/BalanceProjection.IoC.csproj" />
+  <Project Path="BalanceProjection.WebApi/BalanceProjection.WebApi.csproj" />
+</Solution>

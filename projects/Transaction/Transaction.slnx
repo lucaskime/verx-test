@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Transaction.Application/Transaction.Application.csproj" />
+  <Project Path="Transaction.Domain/Transaction.Domain.csproj" />
+  <Project Path="Transaction.Infrastructure/Transaction.Infrastructure.csproj" />
+  <Project Path="Transaction.IoC/Transaction.IoC.csproj" />
+  <Project Path="Transaction.WebApi/Transaction.WebApi.csproj" />
+</Solution>

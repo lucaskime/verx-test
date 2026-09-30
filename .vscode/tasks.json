@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-identity",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["build", "${workspaceFolder}/projects/Identity/Identity.WebApi/Identity.WebApi.csproj"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build-transaction",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["build", "${workspaceFolder}/projects/Transaction/Transaction.WebApi/Transaction.WebApi.csproj"],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build-balanceprojection",
+      "command": "dotnet",
+      "type": "process",
+      "args": ["build", "${workspaceFolder}/projects/BalanceProjection/BalanceProjection.WebApi/BalanceProjection.WebApi.csproj"],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

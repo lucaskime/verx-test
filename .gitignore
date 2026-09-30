@@ -1,0 +1,43 @@
+# Segredos / ambiente local (use .env.example como modelo)
+.env
+.env.*
+!.env.example
+
+# .NET build
+[Bb]in/
+[Oo]bj/
+publish/
+artifacts/
+*.nupkg
+*.snupkg
+*.binlog
+
+# Testes / cobertura
+TestResults/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# Logs dos scripts run/
+run/logs/
+*.log
+
+# Arquivos de usuário das IDEs
+.vs/
+.idea/
+*.user
+*.suo
+*.DotSettings.user
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Claude Code (local)
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+._*
